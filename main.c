@@ -19,10 +19,22 @@ int main() {
 		//have two boxes "a"and"b"
 		int a, b;
 		//input the value of "a" and "b"
-		printf("please input your the first number for yuor keyboard  ");
-		scanf("%d", &a);
-		printf("please input your the second number for yuor keyboard  ");
-		scanf("%d", &b);
+		printf("please input the first number for your keyboard  ");
+		
+	 while(scanf("%d",&a)!=1){
+			while(getchar()!='\n');
+			printf("invalid input! please enter a number");
+			}
+		
+		
+		printf("please input the second number for yuor keyboard  ");
+		
+		while(scanf("%d",&b)!=1){
+			while(getchar()!='\n');
+			printf("invalid input! please enter a number");
+			}
+		
+		
 		//calculate the sum of "a" and "b"
 		int sum = a + b;
 		//output the result of sum

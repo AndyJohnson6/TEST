@@ -5,13 +5,15 @@ int main() {
 	system("color 2");
 	while (1) {
 
+		system("cls");
+
 		printf(" \n\t\t                     A N D Y ' S   P R O J E C T                            \n");
 
 
 
-		printf("                   --------------------------------------------------------------- \n");
-		printf("                   -     the score checker v0.1 beta DEVELOPING BY ANDY JOHNSON  -  \n");
-		printf("                   ---------------------------------------------------------------\n");
+		printf("\n\t\t---------------------------------------------------------------\t\t \n");
+		printf("\n\t\t     the score checker v0.1 beta DEVELOPING BY ANDY JOHNSON    \t\t \n");
+		printf("\n\t\t---------------------------------------------------------------\t\t \n");
 
 
 		printf("\t\twelcome to use the score checker, this program can help you to check your score \n");
@@ -19,22 +21,26 @@ int main() {
 		//have two boxes "a"and"b"
 		int a, b;
 		//input the value of "a" and "b"
-		printf("please input the first number for your keyboard  ");
+		printf("please input your the first number for yuor keyboard  ");
 		
-	 while(scanf("%d",&a)!=1){
-			while(getchar()!='\n');
+		while (scanf("%d", &a) != 1) {
+			while (getchar() != '\n');
 			printf("invalid input! please enter a number");
-			}
+		}
+
+
+
+
+		printf("please input your the second number for your keyboard  ");
 		
-		
-		printf("please input the second number for yuor keyboard  ");
-		
-		while(scanf("%d",&b)!=1){
-			while(getchar()!='\n');
+		while (scanf("%d", &b) != 1) {
+			while (getchar() != '\n');
 			printf("invalid input! please enter a number");
-			}
-		
-		
+		}
+
+
+
+
 		//calculate the sum of "a" and "b"
 		int sum = a + b;
 		//output the result of sum
@@ -60,6 +66,22 @@ int main() {
 		else {
 			printf("omg god damn it !!!\n");
 		}
+        
+		//ask the user if they want to continue or not
+		int choice;
+		printf("\nPress 1 to run again, or 0 to exit: ");
+		while (scanf("%d", &choice) != 1 || (choice != 0 && choice != 1)) {
+			while (getchar() != '\n');
+			printf("Invalid input! Please enter 0 or 1: ");
+		}
+		if (choice == 0) {
+			printf("\nThank you for using Andy's Score Checker! Bye!\n");
+			Sleep(1500); //wait for 1.5 seconds before exiting
+
+			break;
+		}
+
+
 
 	}
 

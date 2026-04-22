@@ -21,7 +21,7 @@ int main() {
 		//have two boxes "a"and"b"
 		int a, b;
 		//input the value of "a" and "b"
-		printf("please input your the first number for yuor keyboard  ");
+		printf("please input your the first number for your keyboard  ");
 		
 		while (scanf("%d", &a) != 1) {
 			while (getchar() != '\n');
